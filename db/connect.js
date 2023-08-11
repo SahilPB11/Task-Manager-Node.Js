@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-const connectionString =
-  "mongodb+srv://SahilDb:niT7vVP7xXKiXeSj@cluster0.pktzlj5.mongodb.net/?retryWrites=true&w=majority";
+const connectionString = process.env.Mongo_Uri
 
 export async function connect() {
   try {

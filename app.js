@@ -1,11 +1,14 @@
-import express from "express";
+import express, { urlencoded } from "express";
+import tasks from "./routes/task.js";
 const Port = 3000;
 const app = express();
 
-// routes testing server
-app.get('/', (req, res) => {
-    res.send("task manager is working properly")
-})
+// middleware
+app.use(express.json());
+app.use(urlencoded({extended:false}));
+
+// midle ware for using routes
+app.use('/api/vi/tasks', tasks);
 
 app.listen(Port, (err) => {
     if(err) return console.log(err.message);

@@ -9,14 +9,14 @@ export const createTask = (req, res) => {
 };
 // here we are getting one task
 export const getTask = (req, res) => {
-  res.send("createTask");
+  res.send("getTask");
 };
 // here we are updating task
 export const updateTask = (req, res) => {
-  res.send("createTask");
+  res.send("updateTask");
 };
 // here we aredeleting task
 export const deleteTask = (req, res) => {
-  res.send("createTask");
+  res.send("deleteTask");
 };
 

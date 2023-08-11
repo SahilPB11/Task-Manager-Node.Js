@@ -1,4 +1,4 @@
-// here we are getting all task
+// here we are getting all
 export const allTask = (req, res) => {
   res.send("all item");
 };

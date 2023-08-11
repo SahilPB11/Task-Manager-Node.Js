@@ -7,9 +7,7 @@ export async function connect() {
     // Await for the mongoose connection
     const isit = await mongoose.connect(connectionString, {
       useNewUrlParser: true,
-      useCreateIndex: true,
       useUnifiedTopology: true,
-      useUnifiedTopology:false
     });
     // Log a success message with the host name
     if (isit)

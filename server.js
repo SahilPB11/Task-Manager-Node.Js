@@ -9,3 +9,13 @@ connect().then(() => {
     console.log("server is working properly on " + Port);
   });
 });
+
+const connected = async() => {
+    try{
+        connect.then(() => {
+            app.listen(Port, () => console.log(`Server is listening on ${Port}`))
+        })
+       } catch(err){
+        console.log(err.message);
+    }
+}
